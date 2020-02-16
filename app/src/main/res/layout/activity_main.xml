@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placeholder Text"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:id="@+id/textInfo"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:layout_gravity="center"
+        android:id="@+id/buttonPlayAgain"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp"
+        android:onClick="reset"/>
+    <GridLayout
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_gravity="center"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:background="@drawable/grid"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/r1c1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:alpha="0"
+            android:onClick="finder"
+            android:src="@drawable/o"
+            android:tag="1"
+            />
+
+        <ImageView
+            android:id="@+id/r2c1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:alpha="0"
+            android:src="@drawable/o"
+            android:onClick="finder"
+            android:tag="4"
+
+            />
+
+        <ImageView
+            android:id="@+id/r3c1"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:alpha="0"
+            android:src="@drawable/o"
+            android:onClick="finder"
+            android:tag="7"/>
+
+        <ImageView
+            android:id="@+id/r1c2"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:alpha="0"
+            android:src="@drawable/o"
+            android:onClick="finder"
+            android:tag="2"
+            />
+
+        <ImageView
+            android:id="@+id/r2c2"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/o"
+            android:alpha="0"
+            android:scrollX="-2dp"
+            android:onClick="finder"
+            android:tag="5"/>
+
+        <ImageView
+            android:id="@+id/r3c2"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/o"
+            android:alpha="0"
+            android:onClick="finder"
+            android:tag="8"/>
+
+        <ImageView
+            android:id="@+id/r1c3"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/o"
+            android:alpha="0"
+            android:onClick="finder"
+            android:tag="3"/>
+
+        <ImageView
+            android:id="@+id/r2c3"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:src="@drawable/o"
+            android:alpha="0"
+            android:onClick="finder"
+            android:tag="6"/>
+
+        <ImageView
+            android:id="@+id/r3c3"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/o"
+            android:alpha="0"
+            android:onClick="finder"
+            android:tag="9"
+           />
+    </GridLayout>
+</LinearLayout>
